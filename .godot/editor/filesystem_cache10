@@ -1,0 +1,17 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790962073
+icon.svg::CompressedTexture2D::7805577647645377892::1790937780::1790937783::1::::<><><>0<>0<>acdad45d4c7040bf6cba96e95b69a781<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://addons/::1790945121
+::res://addons/dualgrid/::1790961946
+DualGrid.gd::GDScript::3778491671641389804::1790961946::0::1::::DualGrid<>Node2D<><>0<>1<><>::
+plugin.cfg::TextFile::-1::1790945273::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript::7099100201743937091::1790956358::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://assets/::1790943203
+::res://assets/sprites/::1790937970
+::res://assets/tilesets/::1790953595
+dungeon.png::CompressedTexture2D::5703876986653507594::1790953594::1790953595::1::::<><><>0<>0<>73f20c1dc04976f7e2bf67643a79b70f<>res://.godot/imported/dungeon.png-aa16f5d82612e1e90318b58c9dc7f380.ctex::
+::res://resources/::1790958006
+::res://resources/tilesets/::1790961922
+::res://scenes/::1790944139
+::res://scenes/rooms/::1790961946
+Testing.tscn::PackedScene::7461842610318628245::1790961946::0::1::::<><><>0<>0<><>::uid://cnjaax3txtmdm::::res://assets/tilesets/dungeon.png<>uid://bt3lg85jdnlpk::::res://addons/dualgrid/DualGrid.gd
