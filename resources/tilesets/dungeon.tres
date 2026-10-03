@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" format=3 uid="uid://px0ao50uyrol"]
+
+[ext_resource type="Texture2D" uid="uid://cnjaax3txtmdm" path="res://assets/tilesets/dungeon.png" id="1_3v1db"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8begv"]
+texture = ExtResource("1_3v1db")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_8begv")

@@ -1,0 +1,5 @@
+res://scenes/rooms/Testing.tscn
+res://src/entities/controller/Controller.gd
+res://src/entities/Entity.gd
+res://src/entities/EntityDefinition.gd
+res://src/entities/controller/PlayerController.gd

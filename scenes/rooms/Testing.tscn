@@ -1,12 +1,9 @@
 [gd_scene format=3 uid="uid://dektps8vq2xd2"]
 
-[ext_resource type="Texture2D" uid="uid://cnjaax3txtmdm" path="res://assets/tilesets/dungeon.png" id="1_wci31"]
-[ext_resource type="Script" uid="uid://bt3lg85jdnlpk" path="res://addons/dualgrid/DualGrid.gd" id="2_wci31"]
+[ext_resource type="Texture2D" uid="uid://hkehijcd7uf3" path="res://assets/tilesets/Arena.png" id="1_kiiw7"]
 
 [node name="Testing" type="Node2D" unique_id=452574010]
 
-[node name="DualGrid" type="Node2D" parent="." unique_id=832844931]
-position = Vector2(0, -1)
-script = ExtResource("2_wci31")
-tile_set = ExtResource("1_wci31")
-metadata/_custom_type_script = "uid://bt3lg85jdnlpk"
+[node name="Arena" type="Sprite2D" parent="." unique_id=1538244886]
+texture = ExtResource("1_kiiw7")
+centered = false
