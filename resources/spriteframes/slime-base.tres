@@ -1,0 +1,51 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://m2w4h5hr633b"]
+
+[ext_resource type="Texture2D" uid="uid://d16ef02bbixmx" path="res://assets/sprites/Sime-base.png" id="1_gcc1y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npfgn"]
+atlas = ExtResource("1_gcc1y")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6r15"]
+atlas = ExtResource("1_gcc1y")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqldm"]
+atlas = ExtResource("1_gcc1y")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7ryo"]
+atlas = ExtResource("1_gcc1y")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_740n2"]
+atlas = ExtResource("1_gcc1y")
+region = Rect2(48, 16, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npfgn")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6r15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqldm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d7ryo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_740n2")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 5.0
+}]

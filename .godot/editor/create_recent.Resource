@@ -1,1 +1,3 @@
+EntityDefinition
+SpriteFrames
 TileSet

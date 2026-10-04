@@ -1,5 +1,10 @@
 res://scenes/rooms/Testing.tscn
-res://src/entities/controller/Controller.gd
+res://resources/spriteframes/goblin-base.tres
+res://resources/entities/Player.tres
+res://src/entities/EntitySpawn.gd
 res://src/entities/Entity.gd
-res://src/entities/EntityDefinition.gd
-res://src/entities/controller/PlayerController.gd
+res://src/entities/states/playerstates/PlayerIdleState.gd
+res://src/entities/EntityFactory.gd
+res://src/entities/combat/Hitbox.gd
+res://src/entities/combat/Hurtbox.gd
+res://src/entities/combat/Damage.gd

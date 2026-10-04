@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnjaax3txtmdm"
-path="res://.godot/imported/dungeon.png-aa16f5d82612e1e90318b58c9dc7f380.ctex"
+uid="uid://d16ef02bbixmx"
+path="res://.godot/imported/Sime-base.png-806e9f1167db33075179bcd6560c4131.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/dungeon.png"
-dest_files=["res://.godot/imported/dungeon.png-aa16f5d82612e1e90318b58c9dc7f380.ctex"]
+source_file="res://assets/sprites/Sime-base.png"
+dest_files=["res://.godot/imported/Sime-base.png-806e9f1167db33075179bcd6560c4131.ctex"]
 
 [params]
 

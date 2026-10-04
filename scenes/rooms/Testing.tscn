@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://dektps8vq2xd2"]
 
 [ext_resource type="Texture2D" uid="uid://hkehijcd7uf3" path="res://assets/tilesets/Arena.png" id="1_kiiw7"]
+[ext_resource type="Script" uid="uid://cdg1gkbb71hg7" path="res://src/entities/EntitySpawn.gd" id="2_wci31"]
+[ext_resource type="Resource" uid="uid://sguo5bvywd24" path="res://resources/entities/Player.tres" id="3_gkdmb"]
 
 [node name="Testing" type="Node2D" unique_id=452574010]
 
 [node name="Arena" type="Sprite2D" parent="." unique_id=1538244886]
 texture = ExtResource("1_kiiw7")
 centered = false
+
+[node name="EntitySpawn" type="Node2D" parent="Arena" unique_id=1568220339]
+position = Vector2(257, 244)
+script = ExtResource("2_wci31")
+definition = ExtResource("3_gkdmb")
+metadata/_custom_type_script = "uid://cdg1gkbb71hg7"

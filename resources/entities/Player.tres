@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="EntityDefinition" format=3 uid="uid://sguo5bvywd24"]
+
+[ext_resource type="Script" uid="uid://cbnnb1qq22a5o" path="res://src/entities/states/State.gd" id="1_t8jjo"]
+[ext_resource type="Script" uid="uid://cxpsuipxspfaw" path="res://src/entities/states/HurtState.gd" id="2_0rfo3"]
+[ext_resource type="Script" uid="uid://c2smgkyyh0tfj" path="res://src/entities/EntityDefinition.gd" id="2_a22fp"]
+[ext_resource type="SpriteFrames" uid="uid://7wmjgl64hhkb" path="res://resources/spriteframes/goblin-base.tres" id="3_a22fp"]
+[ext_resource type="Script" uid="uid://cg18ehtvoehky" path="res://src/entities/states/playerstates/PlayerIdleState.gd" id="3_bea2r"]
+[ext_resource type="Script" uid="uid://dfss43k4u52h" path="res://src/entities/states/StunState.gd" id="6_p1wjv"]
+
+[sub_resource type="Resource" id="Resource_xk2a8"]
+script = ExtResource("2_0rfo3")
+metadata/_custom_type_script = "uid://cxpsuipxspfaw"
+
+[sub_resource type="Resource" id="Resource_jwqmy"]
+script = ExtResource("3_bea2r")
+metadata/_custom_type_script = "uid://cg18ehtvoehky"
+
+[sub_resource type="Resource" id="Resource_corg4"]
+script = ExtResource("6_p1wjv")
+metadata/_custom_type_script = "uid://dfss43k4u52h"
+
+[resource]
+script = ExtResource("2_a22fp")
+sprite = ExtResource("3_a22fp")
+speed = 100.0
+acceloration = 10.0
+size = 6
+collision_layer = 2
+collision_mask = 269
+hurtbox_layer = 2
+hurtbox_mask = 5
+idle_state = SubResource("Resource_jwqmy")
+hurt_state = SubResource("Resource_xk2a8")
+stun_state = SubResource("Resource_corg4")
+groups = Array[String](["player"])
+metadata/_custom_type_script = "uid://c2smgkyyh0tfj"

@@ -1,3 +1,6 @@
+EntitySpawn
+CollisionShape2D
+AnimatedSprite2D
+Entity
 TileMapLayer
 Node2D
-DualGrid
