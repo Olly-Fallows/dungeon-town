@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d1kw4x85gocho"]
+
+[ext_resource type="Script" uid="uid://db61dkwxseq4k" path="res://src/entities/combat/weapons/MeleeAttack.gd" id="1_w5ioj"]
+[ext_resource type="SpriteFrames" uid="uid://dhag8i26trwkf" path="res://resources/spriteframes/attacks/slash.tres" id="2_5qlh6"]
+[ext_resource type="Script" uid="uid://c1wijpio8gq4g" path="res://src/entities/combat/Damage.gd" id="2_j1sl7"]
+
+[sub_resource type="Resource" id="Resource_kifw4"]
+script = ExtResource("2_j1sl7")
+metadata/_custom_type_script = "uid://c1wijpio8gq4g"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e16kn"]
+size = Vector2(32, 62)
+
+[node name="Slash" type="Area2D" unique_id=432134596 node_paths=PackedStringArray("animation")]
+script = ExtResource("1_w5ioj")
+animation = NodePath("AnimatedSprite2D")
+damage = SubResource("Resource_kifw4")
+metadata/_custom_type_script = "uid://db61dkwxseq4k"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1455973742]
+sprite_frames = ExtResource("2_5qlh6")
+autoplay = "default"
+offset = Vector2(16, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=193638455]
+position = Vector2(17, 0)
+shape = SubResource("RectangleShape2D_e16kn")

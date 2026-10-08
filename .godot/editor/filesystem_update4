@@ -1,0 +1,16 @@
+res://scenes/attacks/Slash.tscn
+res://resources/spriteframes/goblin-base.tres
+res://resources/spriteframes/attacks/slash.tres
+res://resources/entities/Player.tres
+res://resources/spriteframes/slime-base.tres
+res://resources/entities/Slime.tres
+res://scenes/rooms/Testing.tscn
+res://src/entities/states/HurtState.gd
+res://src/entities/states/playerstates/PlayerAttackState.gd
+res://src/entities/combat/weapons/Weapon.gd
+res://src/entities/EntityDefinition.gd
+res://src/entities/EntityFactory.gd
+res://src/entities/Entity.gd
+res://src/entities/combat/Hitbox.gd
+res://src/entities/combat/Hurtbox.gd
+res://src/entities/Stats.gd

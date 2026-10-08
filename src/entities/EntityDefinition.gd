@@ -5,11 +5,9 @@ class_name EntityDefinition
 @export
 var sprite: SpriteFrames
 
-@export_category("Movement")
+@export_category("Stats")
 @export
-var speed: float
-@export
-var acceloration: float
+var stats: Stats
 
 @export_category("Physics")
 @export
@@ -24,6 +22,11 @@ var hurtbox_layer: int
 @export_flags_2d_physics
 var hurtbox_mask: int
 
+@export_flags_2d_physics
+var hitbox_layer: int
+@export_flags_2d_physics
+var hitbox_mask: int
+
 @export_category("States")
 @export
 var idle_state: State = IdleState.new()
@@ -34,6 +37,7 @@ var stun_state: State = StunState.new()
 
 @export
 var additional_states: Dictionary[String, State] = {}
+
 
 @export_category("Metadata")
 @export

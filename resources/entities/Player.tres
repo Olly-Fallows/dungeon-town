@@ -3,9 +3,16 @@
 [ext_resource type="Script" uid="uid://cbnnb1qq22a5o" path="res://src/entities/states/State.gd" id="1_t8jjo"]
 [ext_resource type="Script" uid="uid://cxpsuipxspfaw" path="res://src/entities/states/HurtState.gd" id="2_0rfo3"]
 [ext_resource type="Script" uid="uid://c2smgkyyh0tfj" path="res://src/entities/EntityDefinition.gd" id="2_a22fp"]
+[ext_resource type="Script" uid="uid://bsfpj5nsqeqsx" path="res://src/entities/states/playerstates/PlayerAttackState.gd" id="2_p1wjv"]
 [ext_resource type="SpriteFrames" uid="uid://7wmjgl64hhkb" path="res://resources/spriteframes/goblin-base.tres" id="3_a22fp"]
 [ext_resource type="Script" uid="uid://cg18ehtvoehky" path="res://src/entities/states/playerstates/PlayerIdleState.gd" id="3_bea2r"]
+[ext_resource type="Script" uid="uid://dxo0su5yc76ju" path="res://src/entities/Stats.gd" id="6_bea2r"]
 [ext_resource type="Script" uid="uid://dfss43k4u52h" path="res://src/entities/states/StunState.gd" id="6_p1wjv"]
+[ext_resource type="Resource" uid="uid://baw5lah0t06t7" path="res://resources/weapons/Sword.tres" id="8_vty5o"]
+
+[sub_resource type="Resource" id="Resource_gkdmb"]
+script = ExtResource("2_p1wjv")
+metadata/_custom_type_script = "uid://bsfpj5nsqeqsx"
 
 [sub_resource type="Resource" id="Resource_xk2a8"]
 script = ExtResource("2_0rfo3")
@@ -15,6 +22,13 @@ metadata/_custom_type_script = "uid://cxpsuipxspfaw"
 script = ExtResource("3_bea2r")
 metadata/_custom_type_script = "uid://cg18ehtvoehky"
 
+[sub_resource type="Resource" id="Resource_vty5o"]
+script = ExtResource("6_bea2r")
+speed = 100.0
+acceloration = 10.0
+weapon = ExtResource("8_vty5o")
+metadata/_custom_type_script = "uid://dxo0su5yc76ju"
+
 [sub_resource type="Resource" id="Resource_corg4"]
 script = ExtResource("6_p1wjv")
 metadata/_custom_type_script = "uid://dfss43k4u52h"
@@ -22,15 +36,19 @@ metadata/_custom_type_script = "uid://dfss43k4u52h"
 [resource]
 script = ExtResource("2_a22fp")
 sprite = ExtResource("3_a22fp")
-speed = 100.0
-acceloration = 10.0
+stats = SubResource("Resource_vty5o")
 size = 6
 collision_layer = 2
-collision_mask = 269
+collision_mask = 29
 hurtbox_layer = 2
 hurtbox_mask = 5
+hitbox_layer = 2
+hitbox_mask = 21
 idle_state = SubResource("Resource_jwqmy")
 hurt_state = SubResource("Resource_xk2a8")
 stun_state = SubResource("Resource_corg4")
+additional_states = Dictionary[String, ExtResource("1_t8jjo")]({
+"attack": SubResource("Resource_gkdmb")
+})
 groups = Array[String](["player"])
 metadata/_custom_type_script = "uid://c2smgkyyh0tfj"

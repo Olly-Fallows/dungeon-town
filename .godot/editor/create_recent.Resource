@@ -1,3 +1,4 @@
-EntityDefinition
+Weapon
 SpriteFrames
+EntityDefinition
 TileSet

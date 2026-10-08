@@ -49,6 +49,21 @@ animations = [{
 "texture": SubResource("AtlasTexture_pxajr")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_pxajr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxajr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxajr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxajr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxajr")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_8speo")
 }, {
 "duration": 1.0,
@@ -56,10 +71,13 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_anplv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxajr")
 }],
 "loop": 1,
 "name": &"idle",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -82,5 +100,5 @@ animations = [{
 }],
 "loop": 1,
 "name": &"run",
-"speed": 5.0
+"speed": 15.0
 }]

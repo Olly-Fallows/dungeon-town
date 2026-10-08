@@ -1,0 +1,56 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dhag8i26trwkf"]
+
+[ext_resource type="Texture2D" uid="uid://d2dikeb6ray68" path="res://assets/sprites/weapons/slash.png" id="1_vuwc3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuwc3"]
+atlas = ExtResource("1_vuwc3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gedqh"]
+atlas = ExtResource("1_vuwc3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vjqt"]
+atlas = ExtResource("1_vuwc3")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6a0r5"]
+atlas = ExtResource("1_vuwc3")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fd73"]
+atlas = ExtResource("1_vuwc3")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bbw2"]
+atlas = ExtResource("1_vuwc3")
+region = Rect2(320, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gedqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vjqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6a0r5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fd73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bbw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bbw2")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 30.0
+}]

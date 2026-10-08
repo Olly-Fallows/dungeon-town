@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Weapon" format=3 uid="uid://baw5lah0t06t7"]
+
+[ext_resource type="PackedScene" uid="uid://d1kw4x85gocho" path="res://scenes/attacks/Slash.tscn" id="1_5bhj1"]
+[ext_resource type="Script" uid="uid://ct2vu8bkg85o" path="res://src/entities/combat/weapons/Weapon.gd" id="1_7u0mt"]
+
+[resource]
+script = ExtResource("1_7u0mt")
+hitbox = ExtResource("1_5bhj1")
+metadata/_custom_type_script = "uid://ct2vu8bkg85o"

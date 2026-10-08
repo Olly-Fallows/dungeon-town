@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="EntityDefinition" format=3 uid="uid://c1sakv7xvb5a0"]
+
+[ext_resource type="Script" uid="uid://cbnnb1qq22a5o" path="res://src/entities/states/State.gd" id="1_w1qio"]
+[ext_resource type="Script" uid="uid://cxpsuipxspfaw" path="res://src/entities/states/HurtState.gd" id="3_hf5ny"]
+[ext_resource type="Script" uid="uid://8mhm8bam1k0o" path="res://src/entities/states/enemystates/RandomIdleState.gd" id="4_w1qio"]
+[ext_resource type="SpriteFrames" uid="uid://m2w4h5hr633b" path="res://resources/spriteframes/slime-base.tres" id="5_vvvn0"]
+[ext_resource type="Script" uid="uid://c2smgkyyh0tfj" path="res://src/entities/EntityDefinition.gd" id="5_w1yw3"]
+[ext_resource type="Script" uid="uid://dxo0su5yc76ju" path="res://src/entities/Stats.gd" id="7_dj2la"]
+[ext_resource type="Resource" uid="uid://baw5lah0t06t7" path="res://resources/weapons/Sword.tres" id="8_ohk46"]
+[ext_resource type="Script" uid="uid://dfss43k4u52h" path="res://src/entities/states/StunState.gd" id="9_heesu"]
+
+[sub_resource type="Resource" id="Resource_xk2a8"]
+script = ExtResource("3_hf5ny")
+metadata/_custom_type_script = "uid://cxpsuipxspfaw"
+
+[sub_resource type="Resource" id="Resource_okb63"]
+script = ExtResource("4_w1qio")
+metadata/_custom_type_script = "uid://8mhm8bam1k0o"
+
+[sub_resource type="Resource" id="Resource_vvvn0"]
+script = ExtResource("7_dj2la")
+max_health = 3
+speed = 50.0
+acceloration = 5.0
+weapon = ExtResource("8_ohk46")
+metadata/_custom_type_script = "uid://dxo0su5yc76ju"
+
+[sub_resource type="Resource" id="Resource_corg4"]
+script = ExtResource("9_heesu")
+metadata/_custom_type_script = "uid://dfss43k4u52h"
+
+[resource]
+script = ExtResource("5_w1yw3")
+sprite = ExtResource("5_vvvn0")
+stats = SubResource("Resource_vvvn0")
+size = 6
+collision_layer = 2
+collision_mask = 29
+hurtbox_layer = 4
+hurtbox_mask = 11
+hitbox_layer = 4
+hitbox_mask = 27
+idle_state = SubResource("Resource_okb63")
+hurt_state = SubResource("Resource_xk2a8")
+stun_state = SubResource("Resource_corg4")
+groups = Array[String](["player"])
+metadata/_custom_type_script = "uid://c2smgkyyh0tfj"

@@ -10,15 +10,28 @@ static func create_entity(definition: EntityDefinition) -> Entity:
 	entity.add_child(sprite)
 	entity.sprite = sprite
 	
-	# Movement
-	entity.speed = definition.speed
-	entity.acceloration = definition.acceloration
+	# Stats
+	entity.stats = definition.stats.duplicate(true)
 	
 	# Physics
 	var collision_shape: CollisionShape2D = CollisionShape2D.new()
 	collision_shape.shape = CircleShape2D.new()
 	collision_shape.shape.radius = definition.size
 	entity.add_child(collision_shape)
+	
+	# Hurtbox
+	entity.hurtbox = Hurtbox.new()
+	entity.hurtbox.collision_layer = definition.hurtbox_layer
+	entity.hurtbox.collision_mask = definition.hurtbox_mask
+	entity.add_child(entity.hurtbox)
+	var hurtbox_shape: CollisionShape2D = CollisionShape2D.new()
+	hurtbox_shape.shape = CircleShape2D.new()
+	hurtbox_shape.shape.radius = definition.size
+	entity.hurtbox.add_child(hurtbox_shape)
+	
+	# Hitbox
+	entity.hitbox_layer = definition.hitbox_layer
+	entity.hitbox_mask = definition.hitbox_mask
 	
 	# States
 	entity.current_state = definition.idle_state.duplicate()

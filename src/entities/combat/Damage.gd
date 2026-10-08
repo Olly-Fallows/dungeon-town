@@ -1,2 +1,5 @@
-extends RefCounted
+extends Resource
 class_name Damage
+
+@export
+var amount: int = 1

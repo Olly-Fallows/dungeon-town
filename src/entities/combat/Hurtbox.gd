@@ -11,9 +11,9 @@ func _ready() -> void:
 func disable() -> void:
 	for c in get_children():
 		if c is CollisionShape2D:
-			c.disabled = true
+			(func(): c.disabled = true).call_deferred()
 
 func enable() -> void:
 	for c in get_children():
 		if c is CollisionShape2D:
-			c.disabled = false
+			(func(): c.disabled = false).call_deferred()
